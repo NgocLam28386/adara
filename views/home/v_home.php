@@ -229,13 +229,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img style="width: 150px; height: 160px;" src="public/layout/img/product/<?php echo $value->image ?>" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html"><?php echo $value->name_product ?></a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>"><?php echo $value->name_product ?></a></h5>
                                 <p class="price">$<?php echo $value->price ?></p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -272,13 +272,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product01.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -290,7 +290,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women Shoes</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women Shoes</a></h5>
                                 <p class="price">$67.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -309,13 +309,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product02.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -327,7 +327,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Exclusive Handbags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Exclusive Handbags</a></h5>
                                 <p class="price">$45.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -345,13 +345,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product03.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -363,7 +363,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Travelling Bags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Travelling Bags</a></h5>
                                 <p class="price">$29.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -382,13 +382,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product04.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -400,7 +400,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Winter Jackets</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Winter Jackets</a></h5>
                                 <p class="price">$59.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -419,13 +419,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product05.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -437,7 +437,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Drawstring Sweatshirt</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Drawstring Sweatshirt</a></h5>
                                 <p class="price">$18.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -457,13 +457,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product06.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -475,7 +475,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women sleeping dress</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women sleeping dress</a></h5>
                                 <p class="price">$12.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -499,13 +499,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product01.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women Shoes</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women Shoes</a></h5>
                                 <p class="price">$67.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -536,13 +536,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product02.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -554,7 +554,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Exclusive Handbags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Exclusive Handbags</a></h5>
                                 <p class="price">$45.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -572,13 +572,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product03.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -590,7 +590,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Travelling Bags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Travelling Bags</a></h5>
                                 <p class="price">$29.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -609,13 +609,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product04.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -627,7 +627,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Winter Jackets</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Winter Jackets</a></h5>
                                 <p class="price">$59.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -646,13 +646,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product05.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -664,7 +664,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Drawstring Sweatshirt</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Drawstring Sweatshirt</a></h5>
                                 <p class="price">$18.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -684,13 +684,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product06.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -702,7 +702,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women sleeping dress</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women sleeping dress</a></h5>
                                 <p class="price">$12.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -726,13 +726,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product01.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -744,7 +744,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women Shoes</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women Shoes</a></h5>
                                 <p class="price">$67.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -763,13 +763,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product02.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -781,7 +781,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Exclusive Handbags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Exclusive Handbags</a></h5>
                                 <p class="price">$45.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -799,13 +799,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product03.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -817,7 +817,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Travelling Bags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Travelling Bags</a></h5>
                                 <p class="price">$29.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -836,13 +836,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product04.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -854,7 +854,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Winter Jackets</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Winter Jackets</a></h5>
                                 <p class="price">$59.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -873,13 +873,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product05.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -891,7 +891,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Drawstring Sweatshirt</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Drawstring Sweatshirt</a></h5>
                                 <p class="price">$18.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -911,13 +911,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product06.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -929,7 +929,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women sleeping dress</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women sleeping dress</a></h5>
                                 <p class="price">$12.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -953,13 +953,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product01.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -971,7 +971,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women Shoes</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women Shoes</a></h5>
                                 <p class="price">$67.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -990,13 +990,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product02.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1008,7 +1008,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Exclusive Handbags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Exclusive Handbags</a></h5>
                                 <p class="price">$45.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -1026,13 +1026,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product03.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1044,7 +1044,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Travelling Bags</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Travelling Bags</a></h5>
                                 <p class="price">$29.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -1063,13 +1063,13 @@
                     <div class="col">
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product04.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1081,7 +1081,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Winter Jackets</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Winter Jackets</a></h5>
                                 <p class="price">$59.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -1100,13 +1100,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product05.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1118,7 +1118,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Drawstring Sweatshirt</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Drawstring Sweatshirt</a></h5>
                                 <p class="price">$18.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
@@ -1138,13 +1138,13 @@
                         <div class="features-product-item mb-30">
                             <div class="features-product-thumb">
                                 <div class="discount-tag">-20%</div>
-                                <a href="shop-details.html">
+                                <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                     <img src="public/layout/img/product/features_product06.jpg" alt="">
                                 </a>
                                 <div class="product-overlay-action">
                                     <ul>
                                         <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                        <li><a href="shop-details.html"><i class="far fa-eye"></i></a></li>
+                                        <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1156,7 +1156,7 @@
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div>
-                                <h5><a href="shop-details.html">Women sleeping dress</a></h5>
+                                <h5><a href="prd_detail.php?id=<?php echo $value->id ?>">Women sleeping dress</a></h5>
                                 <p class="price">$12.00</p>
                                 <div class="features-product-bottom">
                                     <ul>
