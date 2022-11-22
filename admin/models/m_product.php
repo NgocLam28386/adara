@@ -20,7 +20,7 @@ class m_product extends database
     public function insertPrd($ten_sp, $hinh, $gia, $mota, $loai_sp)
     {
         $sql = "insert into products(name_product,image,price,description,cate_id)
-                values ('$ten_sp','$hinh','$gia','$mota','$loai_sp')";
+                values (?,?,?,?,?)";
         $this->setQuery($sql);
         return $this->execute(array($ten_sp, $hinh, $gia, $mota, $loai_sp));
     }
