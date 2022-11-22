@@ -1,0 +1,41 @@
+form {
+    width: 400px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+h3 {
+    font-size: 2.5em;
+}
+input {
+    width: 100%;
+    display: block;
+    /* height: 20px; */
+    height: 40px;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 10px ;
+    background-color: #FF5400;
+    border: 1px solid #FF5400;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.ipl {
+    margin: 20px 0;
+    width: 340px;
+    
+}
+.login {
+    width: 340px;
+    background-color: #FF5400;
+    color: #fff;
+    border-radius: 6px;
+}
