@@ -4,7 +4,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-3 col-lg-4 d-none d-lg-block">
                         <div class="logo">
-                            <a href="index.html"><img src="public/layout/img/logo/logo.png" alt=""></a>
+                            <a href="index.php"><img src="public/layout/img/logo/logo.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-5 col-md-6">

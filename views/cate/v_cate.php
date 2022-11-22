@@ -54,16 +54,16 @@
                                 <div class="new-arrival-item text-center mb-50">
                                     <div class="thumb mb-25">
                                         <!-- <div class="discount-tag" style="margin-left: 20px;">- %</div> -->
-                                        <a href="detail.php?id=<?php echo $value->id ?>"><img style="width: 250px; height: 280px;" src="public/layout/img/product/<?php echo $value->image ?>" alt=""></a>
+                                        <a href="prd_detail.php?id=<?php echo $value->id ?>"><img style="width: 250px; height: 280px;" src="public/layout/img/product/<?php echo $value->image ?>" alt=""></a>
                                         <div class="product-overlay-action">
                                             <ul>
                                                 <li><a href="cart.html"><i class="far fa-heart"></i></a></li>
-                                                <li><a href="detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
+                                                <li><a href="prd_detail.php?id=<?php echo $value->id ?>"><i class="far fa-eye"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="content">
-                                        <h5><a href="detail.php?id=<?php echo $value->id ?>"><?php echo $value->name_product?></a></h5>
+                                        <h5><a href="prd_detail.php?id=<?php echo $value->id ?>"><?php echo $value->name_product?></a></h5>
                                         <span class="price"><?php echo $value->price ?> $</span>
                                     </div>
                                 </div>
