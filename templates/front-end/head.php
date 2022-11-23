@@ -1,5 +1,7 @@
 <?php 
-  
+  if(!isset($_SESSION["cart"])) {
+    $_SESSION["cart"] = [];
+  }
 ?>
 <!doctype html>
 <html class="no-js" lang="">

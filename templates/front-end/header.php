@@ -18,6 +18,39 @@
                             <li class="sign-in"><a href="">Sign In</a></li>
                             <li class="wish-list"><a href="#"><i class="flaticon-heart-shape-outline"></i></a></li>
                             <li class="header-shop-cart"><a href="cart.php"><i class="flaticon-shopping-bag"></i></a>
+                            <ul class="minicart">
+                                <?php
+                                $i = 0;
+                                 foreach($_SESSION["cart"] as $key) {
+                                    ?>
+                                        <li class="d-flex align-items-start">
+                                            <div class="cart-img">
+                                                <a href="#"><img src="public/layout/img/product/<?php echo $key[2] ?>" alt=""></a>
+                                            </div>
+                                            <div class="cart-content">
+                                                <h4><a href="#"><?php echo $key[1] ?></a></h4>
+                                                <div class="cart-price">
+                                                    <span class="new">$<?php echo $key[3] ?></span>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="del-icon">
+                                                <a href="delete_cart.php?id_cart=<?php echo $i ?>"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </li>
+                                        <?php
+                                        $i++;
+                                     }?>
+                                       
+                                        
+                                        <li>
+                                            <div class="checkout-link">
+                                                <a href="cart.php">Shopping Cart</a>
+                                                <a class="black-color" href="cart.php">Checkout</a>
+                                            </div>
+                                        </li>
+                                    </ul>
                             </li>
 
                         </ul>

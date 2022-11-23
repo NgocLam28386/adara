@@ -259,7 +259,7 @@
                                         <input type="hidden" name="ten-sp" value="<?php echo $value->name_product ?>">
                                         <input type="hidden" name="gia" value="<?php echo $value->price ?>">
                                         <input type="hidden" name="hinh" value="<?php echo $value->image ?>">
-                                        <input  class="features-product-cart" name="add-cart" type="submit" value="ADD TO CART" style="text-transform: uppercase;color: #e9e9e9;padding: 8px 0;background: #202026;">
+                                        <input   class="features-product-cart" name="add-cart" type="submit" value="ADD TO CART" style="text-transform: uppercase;color: #e9e9e9;padding: 8px 0;background: #202026;">
                                     </form>
                                     <!-- <div class="features-product-cart"><a href="cart.php?id=<?php
                                                                                                     // echo $value->id
