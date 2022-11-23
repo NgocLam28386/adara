@@ -44,8 +44,8 @@ class c_cart
     function xoa1_hang()
     {
         if (isset($_GET["id_cart"])) {
-            array_slice($_SESSION["cart"], $_GET["id_cart"], 1);
-            // unset($_SESSION["cart"][$_GET["id_cart"]]);
+            // array_slice($_SESSION["cart"], $_GET["id_cart"], 1);
+            unset($_SESSION["cart"][$_GET["id_cart"]]);
             // $_SESSION["cart"];
             // echo "<pre>";
             // echo print_r($_SESSION["cart"]);
@@ -60,8 +60,8 @@ class c_cart
         if (isset($_GET["id_cart"])) {
             // echo $_GET["id_cart"];
             // die();
-            // unset($_SESSION["cart"][$_GET["id_cart"]]);
-            array_slice($_SESSION["cart"], $_GET["id_cart"], 1);
+            unset($_SESSION["cart"][$_GET["id_cart"]]);
+            // array_slice($_SESSION["cart"], $_GET["id_cart"], 1);
         } else {
             $_SESSION["cart"] = [];
         }

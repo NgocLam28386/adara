@@ -35,9 +35,11 @@
                                                 </div>
                                             </div>
                                         
-                                            <div class="del-icon">
-                                                <a href="delete_cart.php?id_cart=<?php echo $i ?>"><i class="far fa-trash-alt"></i></a>
-                                            </div>
+                                            <!-- <div class="del-icon">
+                                                <a href="<?php
+                                                //  echo $i
+                                                  ?>"><i class="far fa-trash-alt"></i></a>
+                                            </div> -->
                                         </li>
                                         <?php
                                         $i++;
