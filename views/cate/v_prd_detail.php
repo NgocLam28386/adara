@@ -90,7 +90,15 @@
                                     </div>
                                 </form>
                             </div>
-                            <a href="#" class="btn">add to cart</a>
+                            <form action="cart.php" method="POST">
+                                        <input type="hidden" name="product_id" value="<?php echo $value->id ?>">
+                                        <input type="hidden" value="1" name="so-luong">
+                                        <input type="hidden" name="ten-sp" value="<?php echo $value->name_product ?>">
+                                        <input type="hidden" name="gia" value="<?php echo $value->price ?>">
+                                        <input type="hidden" name="hinh" value="<?php echo $value->image ?>">
+                                        <input   class="btn" name="add-cart" type="submit" value="ADD TO CART" style="text-transform: uppercase;color: #e9e9e9;padding: 8px 20px;background: #202026; margin-right: 10px;">
+                                    </form>
+                            <!-- <a href="cart.php" class="btn">add to cart</a> -->
                             <div class="wishlist-compare">
                                 <ul>
                                     <li><a href="#"><i class="far fa-heart"></i> Add to Wishlist</a></li>

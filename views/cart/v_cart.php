@@ -46,7 +46,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach($_SESSION["cart"] as $key) { ?>
+                                <?php $i =0; foreach($_SESSION["cart"] as $key) { ?>
                                 <tr>
                                     <td class="product-thumbnail"><a href="prd_detail.php"><img src="public/layout/img/product/<?php echo $key[2] ?>" alt=""></a></td>
                                     <td class="product-name">
@@ -58,32 +58,32 @@
                                             <form action="#" class="num-block">
                                                 <input type="text" class="in-num" value="<?php echo $key[4] ?>" readonly="">
                                                 <div class="qtybutton-box">
-                                                    <span class="plus"><img src="img/icon/plus.png" alt=""></span>
-                                                    <span class="minus dis"><img src="img/icon/minus.png" alt=""></span>
+                                                    <span  class="plus"><img src="public/layout/img/icon/plus.png" alt=""></span>
+                                                    <span class="minus dis"><img src="public/layout/img/icon/minus.png" alt=""></span>
                                                 </div>
                                             </form>
                                         </div>
                                     </td>
-                                    <td class="product-subtotal"><span>$ <?php echo $key[5] ?>.00</span></td>
-                                    <td class="product-delete"><a href="#"><i class="flaticon-trash"></i></a></td>
+                                    <?php 
+                                    $subtotal = 1;
+                                    if($key[4]>0) {
+                                        $subtotal = $key[4] * $key[3];
+                                    } ?>
+                                    <td class="product-subtotal"><span>$ <?php echo $subtotal ?></span></td>
+                                    <td class="product-delete"><a href="delete_cart.php?id_cart=<?php echo $i ?>"><i class="flaticon-trash"></i></a></td>
                                 </tr>
-                                <?php } ?>
+                                <?php $i++; } ?>
                             </tbody>
                         </table>
                     </div>
                     <div class="shop-cart-bottom mt-20">
-                        <div class="cart-coupon">
-                            <form action="#">
-                                <input type="text" placeholder="Enter Coupon Code...">
-                                <button class="btn">Apply Coupon</button>
-                            </form>
-                        </div>
                         <div class="continue-shopping">
-                            <a href="shop.html" class="btn">update shopping</a>
+                            <button class="btn">update cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="cart-total pt-95">
+                <a href="checkout.html" class="btn" style="margin: 30px 0 ; background-color: #36363b; color: #fff">PROCEED TO CHECKOUT</a>
+                <!-- <div class="cart-total pt-95">
                     <h3 class="title">CART TOTALS</h3>
                     <div class="shop-cart-widget">
                         <form action="#">
@@ -105,10 +105,10 @@
                                 </li>
                                 <li class="cart-total-amount"><span>TOTAL</span> <span class="amount">$ 151.00</span></li>
                             </ul>
-                            <a href="checkout.html" class="btn">PROCEED TO CHECKOUT</a>
+                            
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
