@@ -15,12 +15,17 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="header-top-action">
                         <ul>
-                            <li class="sign-in"><a href="login.php">Sign In</a></li>
-                            <li class="wish-list"><a href="#"><i class="flaticon-heart-shape-outline"></i></a></li>
-                            <li class="header-shop-cart"><a href="cart.php"><i class="flaticon-shopping-bag"></i></a>
+                            <?php if(isset($_SESSION["user"])) {
+                                echo "Hello ". $_SESSION["user"]->fullname . '<a style="margin-left:10px; color: #000;" name="func" href="logout.php?func=exit"><i class="fa-solid fa-right-from-bracket"></i></a>';
+                                
+                            } else {
+                                echo '<li class="sign-in"><a href="login.php">Sign In</a></li>';
+                            } ?>
+                            <!-- <li class="wish-list"><a href="#"><i class="flaticon-heart-shape-outline"></i></a></li> -->
+                            <li style="margin: 0 10px;" class="header-shop-cart"><a href="cart.php"><i class="flaticon-shopping-bag"></i></a>
                             <ul class="minicart">
                                 <?php
-                                $i = 0;
+                              
                                  foreach($_SESSION["cart"] as $key) {
                                     ?>
                                         <li class="d-flex align-items-start">
@@ -42,7 +47,7 @@
                                             </div>
                                         </li>
                                         <?php
-                                        $i++;
+                                        
                                      }?>
                                        
                                         
