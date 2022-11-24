@@ -5,5 +5,5 @@ $cart = new c_cart();
 $cart->lay_gio_hang();
 $home = new c_home();
 $home->index();
-// $cart->xoa1_hang();
+// $cart->xoa_ve_index();
 

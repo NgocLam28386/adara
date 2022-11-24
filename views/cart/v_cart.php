@@ -1,119 +1,109 @@
 <?php
-    // echo print_r($_SESSION["cart"]);
+// echo print_r($_SESSION["cart"]);
 ?>
 <main>
 
-<!-- breadcrumb-area -->
-<section class="breadcrumb-area breadcrumb-bg" data-background="public/layout/img/bg/breadcrumb_bg03.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="breadcrumb-content">
-                    <h2>Cart Page</h2>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Cart</li>
-                        </ol>
-                    </nav>
+    <!-- breadcrumb-area -->
+    <section class="breadcrumb-area breadcrumb-bg" data-background="public/layout/img/bg/breadcrumb_bg03.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Cart Page</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                            </ol>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- breadcrumb-area-end -->
-<?php 
-    
+    </section>
+    <!-- breadcrumb-area-end -->
+    <?php
 
-             ?>
-<!-- cart-area -->
-<div class="cart-area pt-100 pb-100">
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-12">
-                <div class="cart-wrapper">
-                    <div class="table-responsive">
-                        <table class="table mb-0">
-                            <thead>
-                                <tr>
-                                    <th class="product-thumbnail"></th>
-                                    <th class="product-name">Product</th>
-                                    <th class="product-price">Price</th>
-                                    <th class="product-quantity">QUANTITY</th>
-                                    <th class="product-subtotal">SUBTOTAL</th>
-                                    <th class="product-delete"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $i =0; foreach($_SESSION["cart"] as $key) { ?>
-                                <tr>
-                                    <td class="product-thumbnail"><a href="prd_detail.php"><img src="public/layout/img/product/<?php echo $key[2] ?>" alt=""></a></td>
-                                    <td class="product-name">
-                                        <h4><a href="shop-details.html"><?php echo $key[1]  ?></a></h4>
-                                    </td>
-                                    <td class="product-price">$ <?php echo $key[3]  ?>.00</td>
-                                    <td class="product-quantity">
-                                        <div class="cart-plus-minus">
-                                            <form action="#" class="num-block">
-                                                <input type="text" class="in-num" value="<?php echo $key[4] ?>" readonly="">
-                                                <div class="qtybutton-box">
-                                                    <span  class="plus"><img src="public/layout/img/icon/plus.png" alt=""></span>
-                                                    <span class="minus dis"><img src="public/layout/img/icon/minus.png" alt=""></span>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </td>
-                                    <?php 
-                                    $subtotal = 1;
-                                    if($key[4]>0) {
-                                        $subtotal = $key[4] * $key[3];
-                                    } ?>
-                                    <td class="product-subtotal"><span>$ <?php echo $subtotal ?></span></td>
-                                    <td class="product-delete"><a href="delete_cart.php?id_cart=<?php echo $i ?>"><i class="flaticon-trash"></i></a></td>
-                                </tr>
-                                <?php $i++; } ?>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="shop-cart-bottom mt-20">
-                        <div class="continue-shopping">
-                            <button class="btn">update cart</button>
+
+    ?>
+    <!-- cart-area -->
+    <div class="cart-area pt-100 pb-100">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <form action="" method="POST">
+                        <div class="cart-wrapper">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-thumbnail"></th>
+                                            <th class="product-name">Product</th>
+                                            <th class="product-price">Price</th>
+                                            <th class="product-quantity">QUANTITY</th>
+                                            <th class="product-subtotal">SUBTOTAL</th>
+                                            <th class="product-delete"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        // $i =0;
+                                        $totals = 0;
+                                        $qty = 0;
+                                        // echo "<pre>";
+                                        // echo print_r($_SESSION["cart"]);
+                                        // foreach($_SESSION["cart"] as $key => $value) {
+                                        //     echo $value[0];
+                                        //     break;
+                                        // }
+                                        foreach ($_SESSION["cart"] as $key) { ?>
+                                            <tr>
+                                                <td class="product-thumbnail"><a href="prd_detail.php"><img src="public/layout/img/product/<?php echo $key[2] ?>" alt=""></a></td>
+                                                <td class="product-name">
+                                                    <h4><a href="shop-details.html"><?php echo $key[1]  ?></a></h4>
+                                                </td>
+                                                <td class="product-price">$ <?php echo $key[3]  ?>.00</td>
+                                                <td class="product-quantity">
+
+                                                    <input type="hidden" name="price" value="<?php echo $key[3] ?>">
+                                                    <?php
+                                                    //  $qty +=$key[4]
+                                                      ?>
+                                                    <input name="quantity" type="text" class="in-num" value="<?php echo $key[4] ?>">
+                                                </td>
+                                                <?php
+                                                $subtotal = 1;
+                                                $subtotal = $key[4] * $key[3];
+                                                $totals += $subtotal;
+                                                ?>
+                                                <td class="product-subtotal"><span>$ <?php echo $subtotal ?></span></td>
+                                                <td class="product-delete"><a href="delete_cart.php?id_cart=<?php echo $key[0] ?>"><i class="flaticon-trash"></i></a></td>
+                                            </tr>
+                                        <?php
+                                        } ?>
+                                    </tbody>
+                                    <tr>
+                                        <td>Totals</td>
+                                        <td>$<?php echo $totals ?></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- <div class="shop-cart-bottom mt-20">
+                                <div class="continue-shopping">
+                                    <button type="submit" name="btn-update-cart" class="btn">update cart</button>
+                                </div>
+                            </div> -->
                         </div>
-                    </div>
+                    </form>
+                    <a href="checkout.php" class="btn" style="margin: 30px 0 ; background-color: #36363b; color: #fff">PROCEED TO CHECKOUT</a>
+
                 </div>
-                <a href="checkout.html" class="btn" style="margin: 30px 0 ; background-color: #36363b; color: #fff">PROCEED TO CHECKOUT</a>
-                <!-- <div class="cart-total pt-95">
-                    <h3 class="title">CART TOTALS</h3>
-                    <div class="shop-cart-widget">
-                        <form action="#">
-                            <ul>
-                                <li class="sub-total"><span>SUBTOTAL</span> $ 136.00</li>
-                                <li>
-                                    <span>SHIPPING</span>
-                                    <div class="shop-check-wrap">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">FLAT RATE: $15</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">FREE SHIPPING</label>
-                                        </div>
-                                        <a href="#" class="calculate">Calculate shipping</a>
-                                    </div>
-                                </li>
-                                <li class="cart-total-amount"><span>TOTAL</span> <span class="amount">$ 151.00</span></li>
-                            </ul>
-                            
-                        </form>
-                    </div>
-                </div> -->
             </div>
         </div>
 
     </div>
-</div>
-<!-- cart-area-end -->
+    </div>
+    <!-- cart-area-end -->
 
 </main>

@@ -87,23 +87,30 @@ class c_product
                 $ten_san_pham = $_POST["ten_san_pham"];
                 $chose = $_POST['chose'];
                 $mota = $_POST["mo_ta"];
-                $hinh = ($_FILES['f_hinh_anh']['error'] == 0) ? $_FILES['f_hinh_anh']['name'] :"";
+                $hinh_anh_moi = $_FILES["f_hinh_anh"];
+                // echo "<pre>";
+                // echo print_r( $hinh_anh_moi);
+                // die();
+                $hinh = ($_FILES['f_hinh_anh']['error'] == 0) ? $_FILES['f_hinh_anh']['name'] : "";
                 $don_gia = $_POST["don_gia"];
-                $result = $m_product->update_product_by_id($ten_san_pham,$hinh,$don_gia,$mota,$chose,$id);
-                if($result) {
-                    if ($hinh != "") {
-                        move_uploaded_file($_FILES['f_hinh_anh']['tmp_name'],"../public/layout/img/product/".$hinh);
+                
+                if (isset($hinh)) {
+                   if($hinh>0) {
+                    $result = $m_product->update_product_by_id($ten_san_pham, $hinh, $don_gia, $mota, $chose, $id);
+                    if ($result) {
+                        if ($hinh != "") {
+                            move_uploaded_file($_FILES['f_hinh_anh']['tmp_name'], "../public/layout/img/product/" . $hinh);
+                        }
+                        echo "<script>alert('thành công')</script>";
+                        header("location:product.php");
+                    } else {
+                        echo "fail";
                     }
-                    echo "<script>alert('thành công')</script>";
-                    header("location:product.php");
-                }else{
-                    echo "fail";
-                }
+                   }
+                } 
             }
-            
         }
         $view = "views/product/v_editPrd.php";
         include("templates/layout.php");
     }
-
 }

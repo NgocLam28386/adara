@@ -129,41 +129,35 @@
                 <div class="card">
                     <div class="card-body">
                         <form class="form" action="" method="POST" enctype="multipart/form-data">
-                            <h1>Sửa sản phẩm</h1>
+                            <h1>Thêm người dùng</h1>
                             <div class="mb-3">
-                                <label  for="formFile" class="form-label">Tên sản phẩm</label>
-                                <input style="border: 1px solid #333;" value="<?php echo $product_detail->name_product ?>" class="form-control" type="text" name="ten_san_pham" placeholder="Tên sản phẩm">
+                                <label  for="formFile" class="form-label">Họ tên</label>
+                                <input style="border: 1px solid #333;" class="form-control" type="text" name="fullname" >
                             </div>
                             <div class="mb-3">
-                                <label for="formFile" class="form-label">Chọn ảnh sản phẩm</label>
-                                <input style="border: 1px solid #333;" class="form-control" id="formFile" type="file" name="f_hinh_anh">
-                            </div>
-                            <div class="mb-3">
-                                <label for="image" class="form-lable fs-3">Hoặc giữ lại ảnh cũ</label>
-                                <input id="img-old" name="img-old" type="hidden" class="form-control fs-4" value="<?php echo $product_detail->image ?>"> <br>
-                                <img src="../public/layout/img/product/<?php echo $product_detail->image ?>" alt="">
+                                <label for="formFile" class="form-label">Tên người dùng</label>
+                                <input style="border: 1px solid #333;" class="form-control" type="text" id="formFile" name="username">
                             </div>
                             <!-- <input type="text" name="ma_loai" placeholder="Mã loại">  -->
                             <div class="mb-3">
-                                <label for="formFile" class="form-label">Nhập đơn giá</label>
-                                <input style="border: 1px solid #333;" class="form-control" value="<?php echo $product_detail->price ?>" type="text" name="don_gia" placeholder="Đơn giá">
+                                <label for="formFile" class="form-label">E-mail</label>
+                                <input style="border: 1px solid #333;" class="form-control" type="text" name="email" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Password</label>
+                                <input style="border: 1px solid #333;" class="form-control" type="text" name="password" >
                             </div>
                             <div class="mb-3">
                                 <select name="chose" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width: 200px; padding: 8px;">
-                                    <option selected>Chọn loại sản phẩm</option>
                                     <?php
-                                    foreach ($read_cate as $key => $value) { ?>
-                                        <option value="<?php echo $value->cate_id ?>"><?php echo $value->name ?></option>
+                                    foreach ($read_role as $key => $value) { ?>
+                                        <option value="<?php echo $value->id_role ?>"><?php echo $value->fullname ?></option>
                                     <?php }
                                     ?>
                                 </select>
                             </div>
-                            <div class="mb-3">
-                            <textarea style="border: 1px solid #333;padding: 10px;"  name="mo_ta" placeholder="Mô tả" rows="10" id="" cols="156">
-                                <?php echo $product_detail->description ?>
-                            </textarea>
-                            </div>
-                            <input  style="width: 200px;height: 45px;" class="btn btn-secondary" type="submit" name="btn">
+                            
+                            <input value="Thêm" style="width: 200px;height: 45px;" class="btn btn-secondary" type="submit"  name="btn-submit">
                         </form>
                     </div>
                 </div>
