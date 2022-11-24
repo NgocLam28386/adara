@@ -153,7 +153,7 @@
                                     <td><?php echo $value->price ?></td>
                                     <td><?php echo $value->description ?></td>
                                     <td><?php echo $value -> name  ?></td>
-                                    <td><a href="deletePrd.php?id=<?php echo $value->id ?>"><i class="fa-solid fa-trash"></i></a> <span style="margin: 0 8px;"></span> <a href="editProduct.php?id=<?php echo $value->id ?>"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                                    <td><a onclick="return delete_by_name('<?php echo $value->name_product ?>')" href="deletePrd.php?id=<?php echo $value->id ?>"><i class="fa-solid fa-trash"></i></a> <span style="margin: 0 8px;"></span> <a href="editProduct.php?id=<?php echo $value->id ?>"><i class="fa-solid fa-pen-to-square"></i></a></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
@@ -183,3 +183,8 @@
     <!-- End footer -->
     <!-- ============================================================== -->
 </div>
+<script>
+    function delete_by_name(name) {
+        return confirm("Bạn có chắc chắn muốn xóa sản phẩm :" +name+" không ?")
+    }
+</script>

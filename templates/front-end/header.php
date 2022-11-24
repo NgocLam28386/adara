@@ -15,7 +15,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="header-top-action">
                         <ul>
-                            <li class="sign-in"><a href="">Sign In</a></li>
+                            <li class="sign-in"><a href="login.php">Sign In</a></li>
                             <li class="wish-list"><a href="#"><i class="flaticon-heart-shape-outline"></i></a></li>
                             <li class="header-shop-cart"><a href="cart.php"><i class="flaticon-shopping-bag"></i></a>
                             <ul class="minicart">
@@ -35,11 +35,11 @@
                                                 </div>
                                             </div>
                                         
-                                            <!-- <div class="del-icon">
-                                                <a href="<?php
-                                                //  echo $i
+                                            <div class="del-icon">
+                                                <a href="delete_ve_index.php?id_cart=<?php
+                                                 echo $key[0]
                                                   ?>"><i class="far fa-trash-alt"></i></a>
-                                            </div> -->
+                                            </div>
                                         </li>
                                         <?php
                                         $i++;

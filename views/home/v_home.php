@@ -221,7 +221,7 @@
                             <div class="col">
                                 <div class="features-product-item mb-30">
                                     <div class="features-product-thumb">
-                                        <div class="discount-tag">-20%</div>
+                                        <!-- <div class="discount-tag">-20%</div> -->
                                         <a href="prd_detail.php?id=<?php echo $value->id ?>">
                                             <img style="width: 150px; height: 160px;" src="public/layout/img/product/<?php echo $value->image ?>" alt="">
                                         </a>
