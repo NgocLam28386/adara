@@ -57,16 +57,19 @@ class c_user
     public function insertUser() {
         $m_user = new m_user();
         if(isset($_POST["btn"])) {
-            $username = $_POST["username"];
+            $fullname = $_POST["fullname"];
             $email = $_POST["email"];
             $password = $_POST["password"];
             $id_role = $_POST["id_role"];
-            $phone = $_POST["phone"];
+           
             $pass2 = $_POST["password1"];
             // echo $email;
             if($pass2 === $password) {
-                $result = $m_user->addAccount($username,$phone,$email,md5($password),$id_role);
-                header("location:login.php");
+                $result = $m_user->addAccount($fullname,$email,md5($password),$id_role);
+                if($result) {
+                    header("location:login.php");
+                }
+                
             } else {
                 echo '<script>alert("Mật khẩu không khớp")</script>';
             }

@@ -229,7 +229,7 @@
 
     <div class="grid">
 
-        <form action="" method="POST" class="form login">
+        <form action="login-action.php" method="POST" class="form login">
 
             <div class="form__field">
                 <label for="login__username"><svg class="icon">
@@ -246,7 +246,7 @@
             </div>
 
             <div class="form__field">
-                <input type="submit" value="Sign In">
+                <input type="submit" name="login" value="Sign In">
             </div>
 
         </form>

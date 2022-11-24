@@ -229,15 +229,15 @@
 
     <div class="grid">
 
-        <form action="" method="POST" class="form login">
+        <form action="signup-action.php" method="POST" class="form login">
 
             <div class="form__field">
                 <input autocomplete="username" id="login__username" type="text" name="fullname" class="form__input" placeholder="Full name" required>
             </div>
-
+            
             <div class="form__field">
                 
-                <input autocomplete="username" id="login__username" type="text" name="fullname" class="form__input" placeholder="E-mail" required>
+                <input autocomplete="username" id="login__username" type="text" name="email" class="form__input" placeholder="E-mail" required>
             </div>
 
             <div class="form__field">
@@ -246,10 +246,10 @@
             </div>
             <div class="form__field">
                 <input type="hidden" value="2" name="id_role">
-                <input id="login__password" type="password" name="password" class="form__input" placeholder="Re-Password" required>
+                <input id="login__password" type="password" name="password1" class="form__input" placeholder="Re-Password" required>
             </div>
             <div class="form__field">
-                <input type="submit" value="Sign Up">
+                <input type="submit" name="btn" value="Sign Up">
             </div>
 
         </form>
